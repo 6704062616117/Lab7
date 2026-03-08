@@ -1,0 +1,22 @@
+double functionM(void);
+int functionN(int n, double x);
+double functionO(double, int, double, int);
+double functionP(int a, int n, int b, int c);
+ 
+int main(void) {
+  	int a, b, c, d, e;
+  	double r, s, t, u, v;
+  	
+}
+
+//a)  functionM();  ไม่ผิดพลาด
+//b)  a = functionM();  ผิดพลาด functionM() คืนค่า double แต่ a เป็น int
+//c)  b = functionN(a, b);  ผิดพลาด parameter ที่ 2 ต้องเป็น double แต่ส่ง int
+//d)  r = functionO(r,a,s,b);  ไม่ผิดพลาด
+//e)  s = functionP(a,b,c,d,e);  ผิดพลาด ส่ง 5 arguments แต่ฟังก์ชันต้องการ 4
+//f)  u = functionM();  ไม่ผิดพลาด
+//g)  c = d + functionN(r,s);  ผิดพลาด parameter แรกควรเป็น int แต่ส่ง double
+//h)  t = s * functionO(r, a, r, a);  ไม่ผิดพลาด
+//i)  a = v + functionP(r, s, t, t);  ผิดพลาด functionP ต้องการ int แต่ส่ง double
+//j)  functionP(functionN(a, a), s, t, t+r);  ผิดพลาด argument ควรเป็น int แต่มี double
+//k)  v = functionP(functionN(a, a), s, t, t+r);  ผิดพลาด argument ควรเป็น int แต่มี double
